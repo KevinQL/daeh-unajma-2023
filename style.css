@@ -11,19 +11,21 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(7,6,95,0.39743819
     background-attachment: fixed;
 
 }
-.imgclass--{
+.imgclass{
     padding: 0;
     width: 100%;
     height: 550px;
     /* text-align: center; */
     /* background-color: rgba(233, 233, 22, 0.33); */
-    background-image: url(./imgs/portada1.png);
+    /* background-image: url(./resources/cultura2.jpg); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
-    border-radius: 8px;
     /* filter: blur(5px); */
+
+    position: relative;
+    /* border: 1px solid red; */
 }
 .navclass{
     /* border-bottom: 8px solid rgba(255, 196, 0, 0.545);  */
@@ -38,15 +40,36 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(7,6,95,0.39743819
 .card-presentacion{
 
     /* background: rgba(0, 94, 255, 0.522); */
-    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(14, 14, 39, 0.91) 24%, rgba(18,18,127,0.5514998235622374) 100%);
-    color: rgb(193, 193, 193);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(14, 14, 39, 0.822) 24%, rgba(18, 18, 127, 0.418) 100%);
+    color: rgb(235, 235, 235);
     border: none;
-    border-right: 2px solid white;
-    max-width: 850px;
+    border-right: 70px solid rgba(1, 81, 255, 0.479);
+    max-width: 1000px;
     padding: 30px 30px 30px 70px;
+    border-radius: 8px 0 30px 8px!important;
+
     /* background-color: rgba(250, 235, 215, 0.787); */
 }
 .card-presentacion h5{
     font-size: 3.5rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    z-index: 4;
+}
+
+
+
+/**************/
+.img-test{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    filter: blur(15px) contrast();
+    z-index: 0;
 }
